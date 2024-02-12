@@ -4,7 +4,7 @@
 It's a pattern that helps implement reliable messaging. So, it guarantees at "least once" delivery.
 Consumer must guarantee idempotence on message receival. 
 
-In this method domain events are not written do event bus. Instead, they are persisted in the database and after that job takes event from database and publish them. 
+In this method domain events are not written to event bus. Instead, they are persisted in the database and after that job takes event from database and publish them. 
 
 Idempotence - receiving duplicated messages has the same final effect on the system state as receiving one message. 
 
